@@ -92,6 +92,12 @@ function desenharMural() {
     alvo.appendChild(montarCartao(lista[i]));
   }
 
+  if (lista.length === 0) {
+  var vazio = document.createElement("p");
+  vazio.textContent = "Nenhuma ideia encontrada.";
+  alvo.appendChild(vazio);
+  }
+
   document.getElementById("contagem").textContent =
     lista.length + " de " + DADOS.ideias.length + " ideias";
 
