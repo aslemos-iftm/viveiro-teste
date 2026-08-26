@@ -103,7 +103,7 @@ function desenharMural() {
 
   var aviso = document.getElementById("filtro-ativo");
   if (estado.tag !== null) {
-    aviso.textContent = "mostrando apenas ideias com a etiqueta: " + estado.tag;
+    aviso.textContent = "Mostrando apenas ideias com a etiqueta: " + estado.tag;
   } else {
     aviso.textContent = "";
   }
